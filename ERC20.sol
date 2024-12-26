@@ -1,9 +1,6 @@
 pragma solidity ^0.5.0;
 
-// ----------------------------------------------------------------------------
-// ERC Token Standard #20 Interface
-//
-// ----------------------------------------------------------------------------
+
 contract ERC20Interface {
     function totalSupply() public view returns (uint);
     function balanceOf(address tokenOwner) public view returns (uint balance);
@@ -16,9 +13,7 @@ contract ERC20Interface {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
 
-// ----------------------------------------------------------------------------
-// Safe Math Library
-// ----------------------------------------------------------------------------
+
 contract SafeMath {
     function safeAdd(uint a, uint b) public pure returns (uint c) {
         c = a + b;
